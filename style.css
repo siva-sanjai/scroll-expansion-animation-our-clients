@@ -1,0 +1,130 @@
+body {
+    margin: 0;
+    height: 200vh;
+    background: #f0f0f0;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 260px;
+    top: 250px;
+}
+
+.circle {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-image: radial-gradient(rgb(183, 251, 197), rgb(81, 223, 110), rgb(15, 159, 44));
+    transition: transform 2s, opacity 2s, z-index 2s;
+}
+
+.circle img {
+    width: 100px;
+    height: 60px;
+    padding-top: 30px;
+    padding-left: 10px;
+}
+
+.center-circle {
+    border: 1px dashed #4BB543;
+    top: 20%;
+    left: 10%;
+    transform: translate(-68%, -82%) scale(1);
+    z-index: 10;
+    background-image: radial-gradient(rgba(235, 239, 241, 0.313), rgba(214, 215, 215, 0.409), rgba(137, 138, 138, 0.317));
+}
+
+.center-circle img {
+    width: 110px;
+    height: 110px;
+    padding: 7px;
+}
+
+.circle.hidden {
+    opacity: 0;
+    z-index: 0;
+}
+
+h1 {
+    color: darkgreen;
+    text-align: center;
+    font-size: 50px;
+}
+
+p {
+    color: darkgreen;
+    word-spacing: 5px;
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 50px;
+}
+
+.our-clients {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    /* border: 4px solid black; */
+}
+
+.topics {
+    padding-top: 50px;
+    margin-top: 80px;
+    padding-right: 120px;
+    padding-left: 180px;
+    margin-left: 360px;
+    margin-bottom: 100px;
+}
+/* 4K Monitors
+@media screen and (min-width: 2560px) {
+.container {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    left: 560px;
+    top: 450px;
+}
+.topics {
+    
+    margin-top: 80px;
+    margin-left: 1460px;
+    margin-bottom: 100px;
+}
+h1 {
+font-size: 100px;
+}
+
+p {
+font-size: 44px;
+}
+
+.circle {
+width: 180px;
+height: 180px;
+
+
+}
+
+.circle img {
+width: 140px;
+height: 80px;
+}
+
+.center-circle {
+width: 250px;
+height: 250px;
+
+
+}
+
+.center-circle img {
+width: 230px;
+height: 230px;
+padding: 14px;
+}
+} */
